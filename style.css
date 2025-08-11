@@ -327,7 +327,7 @@ nav {
 } */
 
 .hero-area {
-    background-image: url(img/hero-bg.png);
+    background-image: url(/img/bg.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
@@ -465,11 +465,12 @@ nav {
 
 .about-area {
     padding: 70px 0 0;
-    background-image: url(img/about-bg.png);
+    background-image: url(/1500x500_banner_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
     background-color: #E5E5D4;
+    z-index: 2;
 }
 
 .about-title span {
@@ -626,12 +627,13 @@ body {
     padding: 0px 0;
     background: #EDEAE4;
     position: relative;
-    background-image: url(img/ds-bg.png);
+    background-image: url(/img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     padding: 40px 0 43px;
     position: relative;
+    color: #FFF;
 }
 
 .ds-left {
@@ -652,7 +654,7 @@ body {
 }
 
 .ds-title h2 {
-    color: #000;
+    color: #ffffff;
     font-family: "Cherry Bomb One", system-ui;
     font-size: 50px;
     font-style: normal;
@@ -667,7 +669,7 @@ body {
 }
 
 .ds-title p {
-    color: #000;
+    color: #ffffff;
     text-align: center;
     font-family: Acme;
     font-size: 20px;
@@ -700,7 +702,7 @@ body {
 }
 
 .coppyright-text p {
-    color: #000;
+    color: #ffffff;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
