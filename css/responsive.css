@@ -1,0 +1,415 @@
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+
+@media screen and (min-width: 1200px) and (max-width: 1370px) {
+    .hero-title ul li a {
+        font-size: 18px;
+    }
+    .Token_Address p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .fixed-menu {
+        background-color: #F4E441;
+    }
+    .logo img {
+        width: 160px;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .menu-bar-inner {
+        display: flex;
+        gap: 10px;
+    }
+    .menu-item {
+        display: none !important;
+    }
+    .menu-bar-wraper {
+        display: flex;
+        align-items: center;
+    }
+    header {
+        padding: 5px 0px;
+        position: fixed;
+        margin: auto;
+        width: 100%;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: 999999999999;
+    }
+    nav {
+        padding: 5px 10px;
+    }
+    .menu-icon {
+        margin-right: 30px;
+    }
+    .menu-icon img {
+        width: 38px;
+    }
+    .hero-area {
+        padding-top: 100px;
+    }
+    .hero-img {
+        text-align: center;
+        margin-bottom: -102px;
+    }
+    .hero-title ul {
+        margin-top: 30px;
+    }
+    .hero-title ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .hero-title ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* padding-top: 500px; */
+        position: relative;
+        z-index: 99999999;
+    }
+    .hero-btn-left {
+        position: absolute;
+        left: 0px;
+        bottom: 50px;
+    }
+    .hero-btn-right {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        left: 0;
+        text-align: center;
+    }
+    .about-title span {
+        margin-top: -4px;
+    }
+    .about-title span {
+        color: #000;
+        text-align: center;
+        font-family: "Cherry Bomb One", system-ui;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 1.6px;
+        border: 3px solid #000;
+        background: #FFF;
+        box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.12);
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 12px;
+        margin-bottom: 24px;
+    }
+    .about-title p {
+        color: #000;
+        font-family: Acme;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .tk-box h2 {
+        color: #00B31B;
+        font-size: 35.01px;
+    }
+    .tk-box p {
+        color: #000;
+        font-family: Acme;
+        font-size: 23.66px;
+    }
+    .tk-box-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px 40px;
+    }
+    .tokenomics-area {
+        padding: 10px 0 57px;
+    }
+    .tokemomics-title h2 {
+        font-size: 35px;
+        margin-bottom: 43px;
+        padding: 0;
+    }
+    .tokemomis-left-item {
+        padding: 1px;
+    }
+    .Token_Address {
+        margin-bottom: 20px;
+    }
+    .Token_Address p {
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+        cursor: pointer;
+        font-size: 11px;
+    }
+    .toke-inner {
+        padding: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .tokemomis-left-item ul li:first-of-type {
+        font-size: 14px;
+    }
+    .tokemomis-left-item ul li:last-of-type {
+        font-size: 16px;
+    }
+    .Token_Address {
+        padding: 10px;
+    }
+    .cl-logo-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0px 0px;
+        border: 3px solid #000;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .client-logo {
+        height: 149px;
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+    }
+    .ds-title h2 {
+        color: #000;
+        font-size: 42px;
+        margin-bottom: 25px;
+    }
+    .disclimer-area {
+        padding: 30px 0;
+        background-size: cover;
+        background-position: bottom center;
+        min-height: 656px;
+    }
+    .ds-title {
+        position: relative;
+        z-index: 9999;
+        padding: 22px 0 50px;
+    }
+    /* 
+.ds-img {
+	position: absolute;
+	right: 0px;
+	display: none;
+}
+
+
+.ds-right{
+    top: 0px;
+    right: -20px;
+}
+
+.ds-right img{
+    width: 100px;
+} */
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+
+@media screen and (max-width: 767px) {
+    .fixed-menu {
+        background-color: #F4E441;
+    }
+    .logo img {
+        width: 160px;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .menu-bar-inner {
+        display: flex;
+        gap: 10px;
+    }
+    .menu-item {
+        display: none !important;
+    }
+    .menu-bar-wraper {
+        display: flex;
+        align-items: center;
+    }
+    header {
+        padding: 5px 0px;
+        position: fixed;
+        margin: auto;
+        width: 100%;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: 999999999999;
+    }
+    nav {
+        padding: 5px 10px;
+    }
+    .menu-icon {
+        margin-right: 30px;
+    }
+    .menu-icon img {
+        width: 38px;
+    }
+    .hero-area {
+        padding-top: 100px;
+    }
+    .hero-img {
+        text-align: center;
+        margin-bottom: -102px;
+    }
+    .hero-title ul {
+        margin-top: 30px;
+    }
+    .hero-title ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .hero-title ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* padding-top: 500px; */
+        position: relative;
+        z-index: 99999999;
+    }
+    .hero-btn-left {
+        position: absolute;
+        left: 0px;
+        bottom: 50px;
+    }
+    .hero-btn-right {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        left: 0;
+        text-align: center;
+    }
+    .about-title span {
+        margin-top: -4px;
+    }
+    .about-title span {
+        color: #000;
+        text-align: center;
+        font-family: "Cherry Bomb One", system-ui;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 1.6px;
+        border: 3px solid #000;
+        background: #FFF;
+        box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.12);
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 12px;
+        margin-bottom: 24px;
+    }
+    .about-title p {
+        color: #000;
+        font-family: Acme;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .tk-box h2 {
+        color: #00B31B;
+        font-size: 35.01px;
+    }
+    .tk-box p {
+        color: #000;
+        font-family: Acme;
+        font-size: 23.66px;
+    }
+    .tk-box-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px 40px;
+    }
+    .tokenomics-area {
+        padding: 10px 0 57px;
+    }
+    .tokemomics-title h2 {
+        font-size: 35px;
+        margin-bottom: 43px;
+        padding: 0;
+    }
+    .tokemomis-left-item {
+        padding: 1px;
+    }
+    .Token_Address {
+        margin-bottom: 20px;
+    }
+    .Token_Address p {
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+        cursor: pointer;
+        font-size: 11px;
+    }
+    .toke-inner {
+        padding: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .tokemomis-left-item ul li:first-of-type {
+        font-size: 14px;
+    }
+    .tokemomis-left-item ul li:last-of-type {
+        font-size: 16px;
+    }
+    .Token_Address {
+        padding: 10px;
+    }
+    .cl-logo-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0px 0px;
+        border: 3px solid #000;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .client-logo {
+        height: 149px;
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+    }
+    .client-logo img {
+        width: 100px;
+    }
+    .ds-title h2 {
+        color: #000;
+        font-size: 42px;
+        margin-bottom: 25px;
+    }
+    .disclimer-area {
+        padding: 30px 0;
+        background-size: cover;
+        background-position: bottom center;
+        min-height: 656px;
+    }
+    .ds-title {
+        position: relative;
+        z-index: 9999;
+        padding: 22px 0 50px;
+    }
+    .ds-img {
+        position: absolute;
+        right: 0px;
+        display: none;
+    }
+    .ds-right {
+        top: 0px;
+        right: -20px;
+    }
+    .ds-right img {
+        width: 100px;
+    }
+}

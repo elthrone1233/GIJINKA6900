@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cherry+Bomb+One&display=swap');
+body {
+    font-family: "Acme", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+}
+
+a,
+button {
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.scrolltotop {
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    display: none;
+    z-index: 99999999999;
+}
+
+.scrolltotop i {
+    color: #000;
+}
+
+/*==== nev area start===== */
+
+header {
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    z-index: 99999999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.logo {
+    color: #000 !important;
+    font-family: "Baloo Bhai 2";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 36px */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item ul {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    border-radius: 150px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 5px;
+}
+
+.menu-item ul li a {
+    color: #000;
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 18px */
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    /* 31.2px */
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-align: center;
+    width: 150px;
+    display: block;
+    padding: 10px 10px;
+    border-radius: 70px;
+}
+
+.menu-item ul li a:hover {
+    background: #F4E441;
+}
+
+.active a {
+    background: #F4E441;
+}
+
+.menu-icon ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.menu-bar a {
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+}
+
+.s-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.s-icon a {
+    display: inline-block;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.s-icon a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.mobile-icon-ss {
+    display: none;
+}
+
+/*==== nev area end===== */
+
+/*==== sticky-nev start=== */
+
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    -webkit-animation: slide-down 0.5s !important;
+    animation: slide-down 0.5s !important;
+    left: 0;
+    top: 0px;
+    right: 0;
+    z-index: 250;
+    -webkit-transition: .10s;
+    -o-transition: .10s;
+    transition: .10s;
+    z-index: 999999999999;
+}
+
+.fixed-menu::before {
+    display: none !important;
+}
+
+@-webkit-keyframes slide-down {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/*==== sticky-nev end=== */
+
+/* ====offcanvas manu start===== */
+
+.offcanvas-header {
+    border-bottom: 5px solid #000;
+    background: #F4E441;
+    box-shadow: 0px 4px 0px 0px #000;
+}
+
+.offcanvas-header h5 a {
+    color: #000;
+    font-family: "Baloo Bhai 2";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 36px */
+}
+
+.offcanvas-body {
+    padding: 0px !important;
+    background: #CFE9FF;
+}
+
+.clloss-x {
+    font-size: 25px;
+    cursor: pointer;
+    color: #000;
+}
+
+.clloss-x:hover {
+    color: #000 !important;
+}
+
+.offcanvas-start {
+    top: 0;
+    left: 0;
+    width: 80%;
+    z-index: 11111111111111;
+}
+
+.mobile-menu-item ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    padding: 15px 20px;
+    display: block;
+    transition: .2s;
+    text-transform: uppercase;
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+.mobile-menu-item ul li a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.m-active {
+    background: #000;
+    color: #fff !important;
+}
+
+.mobile-menu-item ul li a i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* ====offcanvas manu end===== */
+
+/* =====hero-area-start===== */
+
+/* .hero-area {
+    background-image: url(img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+    padding: 150px 0 0px;
+    background-color: #E5E3D7;
+    position: relative;
+    min-height: 750px;
+   
+} */
+
+.hero-area {
+    background-image: url(img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 0px 0 0px;
+    background-color: #fff;
+    position: relative;
+}
+
+.hero-left-tx {
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+.hero-right-tx {
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.hero-img {
+    text-align: center;
+    margin-bottom: -99px;
+}
+
+/* .hero-area::before {
+    content: "";
+    background-image: url(img/h-ss.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center 58px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+} */
+
+.hero-container {
+    max-width: 95% !important;
+    margin: auto;
+    position: relative;
+}
+
+.Token_Address {
+    border-radius: 5px;
+    border: 3px solid #000;
+    background: #F4E441;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    display: inline-block;
+}
+
+.Token_Address p {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    cursor: pointer;
+    font-family: "Cherry Bomb One", system-ui;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 19.2px */
+    letter-spacing: 0.8px;
+    /* 24px */
+    text-transform: capitalize;
+}
+
+.hero-title ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* padding-top: 500px; */
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 99999999;
+}
+
+.hero-title ul li a {
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 22px */
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    padding: 20px;
+    transition: .3s;
+    text-align: center;
+    display: block;
+}
+
+.hero-title ul li a:hover {
+    transform: scale(1.04);
+}
+
+.hero-title ul li:first-of-type a {
+    border: 3px solid #000;
+    background: #F835F1;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.12);
+}
+
+.hero-title ul li:last-of-type a {
+    border: 3px solid #000;
+    background: #97D9FD;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.12);
+}
+
+.hero-btn-left {
+    position: absolute;
+    left: -20px;
+    bottom: 0px;
+}
+
+.hero-btn-right {
+    position: absolute;
+    right: -10px;
+    bottom: 0px;
+}
+
+/* .container{
+    max-width: 98%;
+} */
+
+/* about area start */
+
+.about-area {
+    padding: 70px 0 0;
+    background-image: url(img/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    background-color: #E5E5D4;
+}
+
+.about-title span {
+    color: #000;
+    text-align: center;
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 32px */
+    letter-spacing: 1.6px;
+    border: 3px solid #000;
+    background: #FFF;
+    box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.12);
+    /* 24px */
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 47px;
+}
+
+.about-title p {
+    color: #000;
+    font-family: Acme;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 30px */
+    /* 24px */
+}
+
+.about-img {
+    text-align: right;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.cl-logo-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px 0px;
+    border: 3px solid #000;
+    border-top: none;
+}
+
+.client-logo {
+    height: 300px;
+    width: 100%;
+    background-image: url(img/cl-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid #000;
+}
+
+.ldnone {
+    border-left: none;
+}
+
+.client-logo a {
+    display: block;
+    text-align: center;
+    transition: .5s;
+    margin-bottom: 20px;
+}
+
+/* =======Tokenomics area start====== */
+
+.tokenomics-area {
+    padding: 10px 0 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background: #DAFFE0;
+    border-bottom: 3px solid #000;
+}
+
+.toke-inner {
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #EDEAE4;
+    box-shadow: 0px 4px 0px 0px #000;
+    padding: 50px;
+}
+
+.tokemomics-title h2 {
+    color: #000;
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 60px */
+    text-transform: uppercase;
+    /* 60px */
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 0;
+}
+
+.tk-box-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 100px;
+}
+
+.tk-box {}
+
+.tk-box p {
+    color: #000;
+    font-family: Acme;
+    font-size: 41.66px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 49.992px */
+    text-align: center;
+}
+
+.tk-box h2 {
+    color: #00B31B;
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 184.01px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 184.01px */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.tk_1 {
+    transform: rotate(-10deg);
+}
+
+.tk_2 {
+    transform: rotate(10deg);
+}
+
+/* ======disclimer-area===== */
+
+.disclimer-area {
+    padding: 0px 0;
+    background: #EDEAE4;
+    position: relative;
+    background-image: url(img/ds-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 40px 0 43px;
+    position: relative;
+}
+
+.ds-left {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.ds-right {
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.ds-title {
+    position: relative;
+    z-index: 9999;
+}
+
+.ds-title h2 {
+    color: #000;
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 50px */
+    text-transform: uppercase;
+    /* 36px */
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+.ds-title p {
+    color: #000;
+    text-align: center;
+    font-family: Acme;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 20px */
+    /* 24px */
+    margin-bottom: 40px;
+}
+
+.ds-title ul {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    justify-content: center;
+}
+
+.ds-title ul li a img {
+    transition: .3s;
+}
+
+.ds-title ul li a:hover img {
+    transform: scale(1.1);
+}
+
+.ds-img {
+    position: absolute;
+    right: 0px;
+}
+
+.coppyright-text p {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 21.6px */
+    padding-bottom: 30px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.copy-notification {
+    color: #fff;
+    border-radius: 140px;
+    background: #F835F1;
+    padding: 10px;
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-top: -30px;
+    margin-left: -85px;
+    display: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 0px 4px 0px 0px #000;
+}
+
+
+
+/* ========end all the css code== */
